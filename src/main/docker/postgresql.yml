@@ -1,0 +1,11 @@
+version: '2'
+services:
+    reactsample-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/ReactSample/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=ReactSample
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
